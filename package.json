@@ -1,0 +1,19 @@
+{
+  "name": "lead-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack Lead Manager (Next.js 16 + Tailwind CSS v4 + Express 5 + SQLite)",
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "node": ">=20.9.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter lead-manager-backend --filter lead-manager-frontend dev",
+    "dev:backend": "pnpm --filter lead-manager-backend dev",
+    "dev:frontend": "pnpm --filter lead-manager-frontend dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm --filter lead-manager-backend test"
+  }
+}
